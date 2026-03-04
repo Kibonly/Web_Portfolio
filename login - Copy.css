@@ -1,0 +1,77 @@
+header{
+    display: flex;
+    margin: 1vh;
+}
+.header1{
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    background-color: aquamarine;
+}
+
+.header2{
+    display: flex;
+    justify-content:flex-end;
+    width: 20vw;
+    background-color: brown;
+}
+.header2 div{
+    margin:1vh 1vw 1vh 10px;
+    padding:1px 2px 1px 1px;
+    background-color:antiquewhite
+}
+
+
+.topbar{
+    display: flex;
+    background-color: red;
+    flex-direction: row-reverse;
+}
+
+.topbar2{
+    display: flex;
+    justify-content:flex-end;
+    background-color: blue;
+    width: 70vw;
+}
+.topbar2 div{
+    
+    margin:10px 10px 10px 10px;
+    padding:10px 10px 10px 10px;
+}
+
+.login{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+.login_border{
+    background-color:bisque;
+    max-width: 25vw;
+    border-radius: 10px;
+}
+.login_footer{
+    margin-top: 0.8vh;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    background-color: aquamarine;
+    padding: 30px 0;
+    width: 100vw;
+}
+footer div{
+    display: flex;
+    background-color: antiquewhite;
+}
+
+
+

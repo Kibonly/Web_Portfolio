@@ -1,0 +1,211 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color:#fff;
+    /* overflow-x:hidden; */
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: #fff;
+    list-style: none;
+    height: 30px;
+    width: 100%;
+    padding: 10px;
+}
+
+nav a{
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    background-color: #f0f0f0;
+}
+
+nav li{
+    padding-right: 20px;
+}
+
+nav li:first-child{
+    margin-right: auto;
+    margin-left:10px;
+    margin-left:5vw;
+}
+
+.upperbg{
+    background-color:aliceblue;
+    height: 40vh;
+    padding-bottom: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+#upper_text{
+    height: 200px;
+    width: 50%;
+    padding: 10px;
+    margin: 0 0 0 5vw;
+    
+}
+
+#upper_text h2,h1{
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+#upper_img{
+    background-color: blueviolet;
+    height: 200px;
+    width: 200px;
+    margin: 3vh 10vw 0 1vw;
+    border-radius: 10px;
+    background-image: url(img/srabon.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 4px 8px;
+}
+
+button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(29, 142, 150);
+    font-weight: bold;
+    margin-top: 2vh;
+}
+button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.container{
+    margin: 0 0 0 5vw;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.container ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+
+.container a{
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: rgb(38, 255, 0);
+}
+#about_me{
+    max-width:50vw;
+    text-align: justify;
+}
+
+#core_skills{
+    margin: 3vh 10vw 0 1vh;
+}
+
+#project_wrapper{
+    display: flex;
+    gap: 50px;
+    justify-content:flex-start;
+}
+
+#projects{
+    margin: 0 0 0 5vw;
+    padding: 10px;
+}
+
+.project_card{
+    height: 30vh;
+    min-width: 20vw;
+    max-width:30vw;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 0 0 5vw;
+}
+
+.project_image{
+    height: 10vh;
+    padding: 10px;
+    width: 100%;
+    background-color: aqua;
+    border-radius: 10px 10px 0 0 ;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+.project_content{
+    height: max-content;
+    text-align: justify;
+    padding: 10px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.5);
+}
+
+.project_content p{
+    font-size:small;
+    margin-top: 10px;
+}
+
+.project_content h3{
+    font-weight: 600;
+}
+
+.project_content a{
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    color:rgba(29, 142, 150)
+}
+ 
+#projects h1{
+    font-weight: 600;
+    margin: 0 0 0 5vw;
+}
+footer{
+    display: flex;
+    margin-top: 80px;
+    background-color:aliceblue;
+    justify-content: space-around;
+    padding: 20px 5vw 10px 5vw;
+}
+
+#left_footer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social_media {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#icons{
+    display: flex;
+    gap: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
