@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
 }
 
 body{
@@ -42,16 +43,17 @@ nav li:first-child{
 
 .upperbg{
     background-color:aliceblue;
-    height: 40vh;
+    height: max-content;
     padding-bottom: 2vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-right: 10rem;
+
     
 }
 
 #upper_text{
-    height: 200px;
     width: 50%;
     padding: 10px;
     margin: 0 0 0 5vw;
@@ -96,11 +98,11 @@ button:hover{
 }
 
 .container{
-    margin: 0 0 0 5vw;
+    margin: 0 5vw;
     padding: 10px;
     display: flex;
     gap: 20px;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .container ul{
@@ -132,36 +134,31 @@ button:hover{
 }
 
 #projects{
-    margin: 0 0 0 5vw;
     padding: 10px;
+    margin: 0 5rem;
 }
 
 .project_card{
-    height: 30vh;
-    min-width: 20vw;
-    max-width:30vw;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 0 0 0 5vw;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
 }
 
 .project_image{
-    height: 10vh;
-    padding: 10px;
+    height: 120px;
     width: 100%;
     background-color: aqua;
     border-radius: 10px 10px 0 0 ;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
 }
 
 .project_content{
     height: max-content;
     text-align: justify;
-    padding: 10px;
+    padding: 20px;
     width: 100%;
     background-color: #fff;
     border-radius: 0 0 10px 10px;
-    box-shadow: 0 8px 15px rgba(0,0,0,0.5);
 }
 
 .project_content p{
@@ -178,16 +175,16 @@ button:hover{
     margin-top: 10px;
     text-align: center;
     text-decoration: none;
-    color:rgba(29, 142, 150)
+    color:rgba(29, 142, 150);
 }
  
 #projects h1{
     font-weight: 600;
-    margin: 0 0 0 5vw;
+    margin-bottom: 20px;
 }
 footer{
     display: flex;
-    margin-top: 80px;
+    margin-top: 10rem;
     background-color:aliceblue;
     justify-content: space-around;
     padding: 20px 5vw 10px 5vw;
