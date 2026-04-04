@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    background-color: #f5faff;
+}
+
+.container{
+    margin: 0 10rem 0 10rem;
+}
+a{
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0 10.5rem 0;
+}
+
+header ul{
+    display: flex;
+    gap: 1rem;
+}
+
+#siteBranding{
+    color: rgb(0, 93, 172);
+    font-weight:bold;
+    font-size: larger;
+}
+
+.intro{
+    display: flex;
+}
+
+#profile_picture{
+    float: right;
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+#intro_left{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#intro_buttons{
+    display: flex;
+    font-size: 20px;
+}
+
+#intro_buttons a{
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 0 1rem 0 0;
+}
+
+.academicJourney{
+    display: flex;
+    margin-top: 20rem;
+}
