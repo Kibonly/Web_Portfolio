@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">         
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,15 +15,15 @@
 
         <nav>
             <ul>
-                <li>ABOUT</li>
-                <li>SKILLS</li>
-                <li>PROJECTS</li>
-                <li>CONTACT</li>
+                <li ><a href="">ABOUT</a></li>
+                <li><a href="">SKILLS</a></li>
+                <li><a href="">PROJECTS</a></li>
+                <li><a href="">CONTACT</a></li>
             </ul>
         </nav>
 
-        <div>
-            <button>Resume</button>
+        <div id="resume_button">
+            <a href="">Resume</a>
         </div>
     </header>
 
@@ -31,10 +31,10 @@
         <section class="intro">
             <div id="intro_left">
             <p>ELECTRONICS & COMMUNICATION ENGINEER</p>
-            <p style="font-size: 80px;">Sheikh Srabon <br>Ahmed Shakib
-            </p>
-            <p style="font-size: 30px;">ECE Student | Electronics Enthusiast | ML Developer</p>
-            <p style="font-size: 20px;width: 600px;text-align: justify;">Passionate about electronics, circuit design, embedded systems, and machine learning. Engineering the bridge between hardware precision and intelligent software.</p>
+            <p style="font-size: 4rem;color: black; font-weight:620;">Sheikh Srabon <br>
+            <span style="font-size: 4rem;color:rgb(44, 94, 170); font-weight:620;">Ahmed Shakib</span></p>
+            <p style="font-size: 1.75rem;">ECE Student | Electronics Enthusiast | ML Developer</p>
+            <p style="font-size: 1.25rem;width: 600px;text-align: justify;">Passionate about electronics, circuit design, embedded systems, and machine learning. Engineering the bridge between hardware precision and intelligent software.</p>
             <div id="intro_buttons">
                 <a href="" style="background-color: #005caa;color:white;">View Projects</a>
                 <a href="" style="background-color: #b5e0fe; color: #034574;">Contact Me</a>
@@ -45,17 +45,20 @@
 
         <section class="academicJourney">
             <div>
-            <p>Acadmic Journey</p>
+            <p style="font-size: 2.5rem; font-weight: 500; font-family: SpaceGrotesk;">Acadmic <br>
+            <span style="color: #005caa;">Journey</span></p>
             </div>
-            <div id="aj_right"><p>As a KUET ECE student, I bridge the gap between abstract algorithms and physical silicon. My focus lies at the intersection of embedded systems and artificial intelligence.</p>
-            <div id="aj_cards">
-                <div>
-                    <h3>Robotics & Automation</h3>
-                    <p>Designing intelligent robotic systems and autonomous navigation frameworks using ROS and customized sensor fusion algorithms.</p>
+            <div id="aj_right"><p style="font-size: 1.25rem; text-align: justify;">As a KUET ECE student, I bridge the gap between abstract algorithms and physical silicon. My focus lies at the intersection of embedded systems and artificial intelligence.</p>
+            <div id="aj_cards_c">
+                <div id="aj_cards_container">
+                <div class="aj_cards">
+                    <h2>Robotics & Automation</h2>
+                    <p style="font-size: .8rem;">Designing intelligent robotic systems and autonomous navigation frameworks using ROS and customized sensor fusion algorithms.</p>
                 </div>
-                <div>
-                    <h3>Digital Electronics</h3>
-                    <p>Expertise in digital logic design, creating complex counting systems and buzzer architectures using discrete components.</p>
+                <div class="aj_cards">
+                    <h2>Digital Electronics</h2>
+                    <p style="font-size: .8rem;;">Expertise in digital logic design, creating complex counting systems and buzzer architectures using discrete components.</p>
+                </div>
                 </div>
                 <div id="aj_end">
                     "My goal is to become an electronics and AI engineer who builds systems that feel as natural as they are powerful."

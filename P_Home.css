@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Inter';
+    src: url(Fonts/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: 'SpaceGrotesk';
+    src: url(Fonts/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -22,21 +32,38 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 0 10.5rem 0;
+    font-family: 'SpaceGrotesk';
 }
 
 header ul{
     display: flex;
     gap: 1rem;
+    font-size: 1.25rem;
+    font-weight:500;
+}
+
+header a{
+    color: rgb(76, 73, 73);
 }
 
 #siteBranding{
     color: rgb(0, 93, 172);
     font-weight:bold;
-    font-size: larger;
+    font-size: 2rem;
+}
+
+#resume_button a{
+    font-size: 1.25rem;
+    font-weight: 500;
+    background-color:rgb(44, 94, 170);
+    padding: 0.5rem 0.8rem;
+    border-radius: 10px;
+    color: white;
 }
 
 .intro{
     display: flex;
+    font-family: 'Inter';
 }
 
 #profile_picture{
@@ -45,7 +72,7 @@ header ul{
     height: auto;
     border-radius: 10px;
     margin-left: auto;
-    margin-right: 15px;
+    margin-right: 1rem;
 }
 
 #intro_left{
@@ -56,7 +83,6 @@ header ul{
 
 #intro_buttons{
     display: flex;
-    font-size: 20px;
 }
 
 #intro_buttons a{
@@ -65,7 +91,45 @@ header ul{
     margin: 0 1rem 0 0;
 }
 
-.academicJourney{
+.academicJourney {
     display: flex;
     margin-top: 20rem;
+    gap: 15rem;
+    font-family: 'Inter';
+    background-color: rgba(208, 236, 253, 0.207);
+    
+    /* --- The Breakout Trick --- */
+    width: 100vw; /* Forces the section to be exactly the width of the viewport */
+    position: relative;
+    left: 50%; /* Pushes the left edge to the middle of the screen */
+    transform: translateX(-50%); /* Pulls it exactly halfway back so it perfectly centers */
+    
+    /* Optional: Add padding so your content stays aligned with your 10rem container */
+    padding: 4rem 10rem; 
+    box-sizing: border-box; /* Ensures padding doesn't add to the 100vw width */
+}
+#aj_cards_c{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+#aj_cards_container{
+    display: flex;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+.aj_cards{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+#aj_end{
+    border-left: 4px solid #005caa;
+    padding-left: 1.5rem;
+    font-style: italic;
+    color: #333;
 }
