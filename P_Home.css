@@ -23,7 +23,7 @@ body{
 }
 
 .container{
-    margin: 0 10rem 0 10rem;
+    margin: 0 10rem ;
 }
 a{
     text-decoration: none;
@@ -31,7 +31,7 @@ a{
 header{
     display: flex;
     justify-content: space-between;
-    padding: 1.25rem 10rem;
+    padding: 1.25rem 10%;
     font-family: 'SpaceGrotesk';
     font-size: 1rem;
     position: fixed;
@@ -47,7 +47,7 @@ header{
 }
 
 main{
-    padding-top: 20rem;
+    padding-top: 10rem;
 }
 
 header ul{
@@ -106,7 +106,7 @@ header a{
 
 .academicJourney {
     display: flex;
-    margin-top: 20rem;
+    margin-top: 15rem;
     gap: 15rem;
     font-family: 'Inter';
     background-color: rgba(208, 236, 253, 0.207);
@@ -139,6 +139,7 @@ header a{
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
+    width: 20rem;
 }
 
 .aj_cards p{
@@ -153,3 +154,28 @@ header a{
     font-style: italic;
     color: #333;
 }
+
+#technicalArsenalContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-top: 4rem;
+}
+.technicalArsenal {
+    display: grid;
+    /* CHANGED: Automatically creates 2 columns if space allows, drops to 1 column if screen shrinks */
+    grid-template-columns: repeat(5,1fr); 
+    max-width: 1200px; /* Constrains the grid so it stays nicely grouped */
+    margin: 0 auto; /* Centers the entire grid container */
+    gap: 1.5rem; /* Slightly larger gap looks better on wrapping grids */
+}
+.ta_cards{
+    background-color: #fff;
+    padding: 4rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 4px 4px 0px;
+    font-family: Inter;
+}
+
+
