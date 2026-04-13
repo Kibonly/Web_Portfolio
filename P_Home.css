@@ -31,14 +31,28 @@ a{
 header{
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem 0 10.5rem 0;
+    padding: 1.25rem 10rem;
     font-family: 'SpaceGrotesk';
+    font-size: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    /* 3. The Glassy Effect (Glassmorphism) */
+    background: rgba(245, 250, 255, 0.65); /* Semi-transparent version of your #f5faff body background */
+    backdrop-filter: blur(12px); /* Blurs whatever scrolls underneath it */
+    -webkit-backdrop-filter: blur(12px); /* Support for Safari */
+}
+
+main{
+    padding-top: 20rem;
 }
 
 header ul{
     display: flex;
     gap: 1rem;
-    font-size: 1.25rem;
     font-weight:500;
 }
 
@@ -53,7 +67,6 @@ header a{
 }
 
 #resume_button a{
-    font-size: 1.25rem;
     font-weight: 500;
     background-color:rgb(44, 94, 170);
     padding: 0.5rem 0.8rem;
@@ -127,9 +140,16 @@ header a{
     flex-direction: column;
     gap: 0.75rem;
 }
+
+.aj_cards p{
+    font-size: 0.875rem;
+}
+.aj_cards h2{
+    font-size: 1.25rem;
+}
 #aj_end{
     border-left: 4px solid #005caa;
-    padding-left: 1.5rem;
+    padding-left: 1.125rem;
     font-style: italic;
     color: #333;
 }
