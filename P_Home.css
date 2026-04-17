@@ -19,7 +19,8 @@ li{
 }
 
 body{
-    background-color: #f5faff;
+    background-color:#F5FAFF;
+    overflow-x: hidden;
 }
 
 .container{
@@ -47,7 +48,7 @@ header{
 }
 
 main{
-    padding-top: 10rem;
+    padding-top: 15rem;
 }
 
 header ul{
@@ -74,14 +75,14 @@ header a{
     color: white;
 }
 
-.intro{
+#intro{
     display: flex;
     font-family: 'Inter';
 }
 
 #profile_picture{
     float: right;
-    width: 300px;
+    width: 450px;
     height: auto;
     border-radius: 10px;
     margin-left: auto;
@@ -106,7 +107,7 @@ header a{
 
 .academicJourney {
     display: flex;
-    margin-top: 15rem;
+    margin-top: 10rem;
     gap: 15rem;
     font-family: 'Inter';
     background-color: #E9F5FF;
@@ -178,7 +179,7 @@ header a{
     font-family: Inter;
 }
 
-.projects{
+#projects{
     flex-direction: column;
 
     display: flex;
@@ -277,4 +278,91 @@ header a{
     padding: 1rem;
     margin: 0 1rem 1.5rem 1rem;
     border-radius: 10px;
+}
+
+
+.epilogue{
+    display: flex;
+    gap: 1rem;
+    margin: 10rem 0 8rem 0;
+}
+
+#epilogue_right{
+    background-color: #E9F5FF;
+    border-radius: 20px;
+    padding: 3rem 2rem;
+}
+#epilogue_left{
+    display: flex;
+    flex-direction: column;
+    max-width: 40rem;
+    gap: 3rem;
+    font-family: Inter;
+    margin: 4rem 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    font-family: Inter;
+}
+
+input{
+    margin: .5rem 0;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+}
+
+textarea{
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    min-height: 10rem;
+}
+
+form button{
+    padding: 1rem;
+    border: none;
+    background-color: #005DAC;
+    color: white;
+    border-radius: 10px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.epilogue ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.epilogue li{
+    display: flex;
+    gap: 0.5rem;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    font-family: Inter;
+    padding: 1rem 0 1rem 0;
+}
+
+footer ul{
+    display: flex;
+    gap: 1rem;
+    margin-right: 1rem;
+}
+footer img{
+    height: 2rem;
+    width: 2rem;
+}
+
+.section_links{
+    scroll-margin-top: 6rem;
+}
+html{
+    scroll-behavior: smooth;
 }

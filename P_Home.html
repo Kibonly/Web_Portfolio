@@ -15,10 +15,10 @@
 
         <nav>
             <ul>
-                <li ><a href="">ABOUT</a></li>
-                <li><a href="">SKILLS</a></li>
-                <li><a href="">PROJECTS</a></li>
-                <li><a href="">CONTACT</a></li>
+                <li ><a href="#intro">ABOUT</a></li>
+                <li><a href="#technicalArsenalContainer">SKILLS</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#epilogue_right">CONTACT</a></li>
             </ul>
         </nav>
 
@@ -28,7 +28,7 @@
     </header>
 
     <main>
-        <section class="intro">
+        <section id="intro" class="section_links">
             <div id="intro_left">
             <p style="background-color:#BAD3FD;border-radius: 10px;width:max-content;padding: .5rem; font-size: 0.75rem;">ELECTRONICS & COMMUNICATION ENGINEER</p>
             <p style="font-size: 4.5rem;color: black; font-weight:620;">Sheikh Srabon <br>
@@ -36,11 +36,11 @@
             <p style="font-size: 1.5rem;">ECE Student | Electronics Enthusiast | ML Developer</p>
             <p style="font-size: 1.125rem;width: 600px;text-align: justify;">Passionate about electronics, circuit design, embedded systems, and machine learning. Engineering the bridge between hardware precision and intelligent software.</p>
             <div id="intro_buttons">
-                <a href="" style="background-color: #005caa;color:white;">View Projects</a>
-                <a href="" style="background-color: #b5e0fe; color: #034574;">Contact Me</a>
+                <a href="#projects" style="background-color: #005caa;color:white;">View Projects</a>
+                <a href="#epilogue_right" style="background-color: #b5e0fe; color: #034574;">Contact Me</a>
             </div>
             </div>
-            <img src="img/pp.webp" alt="Profile Picture Of Srabon" id="profile_picture">
+            <img src="img/pp_square.webp" alt="Profile Picture Of Srabon" id="profile_picture">
         </section>
 
         <section class="academicJourney">
@@ -67,7 +67,7 @@
         </div>
         </section>
 
-        <section id="technicalArsenalContainer">
+        <section id="technicalArsenalContainer" class="section_links">
             <h2 style="display: flex;justify-content: center;font-size: 2rem;font-family: SpaceGrotesk;">Technical Arsenal</h2>
             <div class="technicalArsenal">
             <div class="ta_cards"><img src="img/SVG/Electrical Circuit.svg" alt="Electronic icon"><p>Electronics & Circuit Design</p></div>
@@ -83,7 +83,7 @@
             </div>
         </section>
 
-        <section class="projects">
+        <section id="projects" class="section_links">
             <h2 style="font-family: SpaceGrotesk;font-size: 2rem;">Featured Works:</h2>
             <p style="font-family: Inter;">Engineering solutions from discrete logic to deep learning.</p>
             <div id="carousel">
@@ -97,7 +97,7 @@
                     <img src="/img/Cards/Portfolio_card.webp" alt="Portfolio_CardImage">
                     <h2>Personal Developer Portfolio</h2>
                     <p>A fully responsive web portfolio utilizing modern CSS architectures, including Flexbox, Grid, and Anchor Positioning, to seamlessly showcase technical projects.</p>
-                    <a href="">View Details</a>
+                    <a href="P_Home.html" target="_self">View Details</a>
                 </div>
                 <div class="project_cards">
                     <img src="img/Cards/Quiz_card.webp" alt="Quiz Buzzer system card img">
@@ -117,36 +117,55 @@
 
         <section class="epilogue">
             <div id="epilogue_left">
-                <h2>Let's Collaborate</h2>
-                <p>Whether it's a circuit design challenge, an AI project, or just a technical discussion—I'm always open to new opportunities.</p>
+                <h2 style="font-family: SpaceGrotesk;font-size: 2rem;">Let's Collaborate</h2>
+                <p style="font-size: 1.25rem;">Whether it's a circuit design challenge, an AI project, or just a technical discussion—I'm always open to new opportunities.</p>
                 <div>
                     <ul>
-                        <li>Email</li>
-                        <li>Location</li>
-                        <li>Socials</li>
+                        <li>
+                            <div style="display: flex;align-items: center;padding: 0 .35rem;"><img src="img/SVG/Mail_svg.svg" alt="Mail svg"></div>
+                            <div>Email <p>srabonasd2017@gmail.com</p></div>
+                        </li>
+                        <li>
+                            <div style="display: flex;align-items: center;padding: 0 .35rem;" ><img src="img/SVG/Location_svg.svg" alt="Location logo"></div>
+                            <div>Location <p>Boyra,Khulna</p></div>
+                        </li>
+                        <li>
+                            <div style="display: flex;align-items: center;padding: 0 .35rem;"><img src="img/SVG/social_svg.svg" alt="Social Meda icon"></div>
+                            <div>Socials 
+                                <div style="display: flex;gap: 1rem;">
+                                    <a href="https://www.linkedin.com/in/srabon-ahmed-9a15a61b1/" target="_blank" style="color: black;">Linkedin</a> 
+                                    <a href="https://github.com/Kibonly" target="_blank" style="color: black;">Github</a>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
-            <div id="epilogue_right">
+            <div id="epilogue_right" class="section_links">
                 <form action="#">
-
+                    <div style="display: flex;">
+                        <label for="fName">Full Name: <input type="text" name="fName" placeholder="Enter your Full Name"></label>
+                        <label for="email">Email Address:<input type="email" name="email" placeholder="Enter your email"></label>
+                    </div>
+                    <label for="msg"> Message: </label><textarea name="msg" id="msg" placeholder="Tell me about your project....."></textarea> 
+                    <button type="submit">Send Message</button>
                 </form>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>© 2024 Sheikh Srabon Ahmed Shakib. KUET ECE.</p>
+        <p>© 2026 Sheikh Srabon Ahmed Shakib. KUET ECE.</p>
         
         <ul>
-            <li class="footer_right"><img src="" alt="LinkedinProfile">
-            <a href=""></a>
+            <li class="footer_right">
+            <a href="https://www.linkedin.com/in/srabon-ahmed-9a15a61b1/" target="_blank"> <img src="img/SVG/linkedin_svg.svg" alt="LinkedinProfile"></a>
             </li>
-            <li class="footer_right"><img src="" alt="GithubProfile">
-            <a href=""></a>
+            <li class="footer_right">
+            <a href="https://github.com/Kibonly" target="_blank"><img src="img/SVG/github_svg.svg" alt="GithubProfile"></a>
             </li>
-            <li class="footer_right"><img src="" alt="FacebookProfile">
-            <a href=""></a>
+            <li class="footer_right">
+            <a href="https://www.facebook.com/sheikhsrabonahmed.shakib" target="_blank"><img src="img/SVG/fb_svg.svg" alt="FacebookProfile"></a>
             </li>
         </ul>
      </footer>
