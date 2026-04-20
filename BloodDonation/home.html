@@ -7,121 +7,140 @@
     <title>Home</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li> <a href="">Srabon</a></li>
-            <li> <a href="">Home</a></li>
-            <li> <a href="">About</a></li>
-            <li> <a href="">Projects</a></li>
-            <li> <a href="">Resume</a></li>
-            <li> <a href="">Contact</a></li>
-        </ul>
-    </nav>
-
-    <div class="upperbg">
-        <div id="upper_text">
-            <h1>HI, I am <span style="color: rgba(29, 142, 150);">Sheikh Srabon </span> </h1 > <h2>Electronics & Communication Engineering Student </h2> 
-                <p style="text-align: justify;">Focused on digital logic design, embedded systems, and intelligent electronic applications. <br>
-                I enjoy transforming circuit diagrams into real, functional systems.
-
-                </p>
-
-                <button > <a href="">View My Work </a> </button>
-        </div>
-
-        <div id="upper_img">
-            
-        </div>
-
-    </div>
-
     <section class="container">
-
-        <div id="about_me">
-
-            <h1>About me:</h1>
-            <p style="text-align: justify;">I am Sheikh Srabon Ahmed Shakib, an Electronics and Communication Engineering student at KUET.
-            I am passionate about digital logic design, embedded systems, and intelligent electronic systems.
-            I enjoy building real-world hardware solutions and transforming theoretical concepts into functional circuits.</p>
-
-        </div>
-
-        <div id="core_skills">
-
-            <h1>Core Skills:</h1>
+        <header>
+            <div id="siteBranding">
+                <p>BloodSync</p>
+            </div>
             <ul>
-                <li> <img src="img/SVG/html.svg" alt="" height="15px" width="15px"> Html/CSS</li>
-                <li> <img src="img/SVG/php.svg" alt="" height="15px" width="15px"> PHP</li>
-                <li> <img src="img/SVG/c++.svg" alt="" height="15px" width="15px"> C/C++</li>
-                <li> <img src="img/SVG/python.svg" alt="" height="15px" width="15px"> Python</li>
+                <li><a href="">Find Blood</a></li>
+                <li><a href="">Become a Donor</a></li>
+                <li><a href="">How it Works</a></li>
+                <li><a href="">About us</a></li>
             </ul>
+            <div id="loginButton">
+                <a href="">Login/Register</a>
+            </div>
+        </header>
+        <main>
+            <section id="about">
+                <div id="aboutLeft">
+                    <p style="font-size:0.875;">CRITICAL IMPACT</p>
+                    <p style="font-size: 4rem;font-weight: 800;color: #DC2626;">A Single Drop 
+                    <br>can Save Three
+                    <br>Lives.</p>
+                    <p style="font-family: manrope;font-size: 1.5rem;margin-bottom: 1rem;">Join the community connecting donors with those in urgent need. Precision logistics meets human empathy in every life-saving transaction</p> 
+                <div class="buttonContainer">
+                    <a href="" id="r">Register as a Donor</a>
+                    <a href="" id="rbu">Request Blood Urgently</a>
+                </div>
+                </div>
+                <div id="img_p">
+                    <img src="Image/BDMS_Placeholder.webp" alt="Placeholder Photo">
+                </div>
+            </section>
+            <section id="urgentBlood">
+                <h1>Urgent Blood Requests</h1>
+                <p>Live updates from clinics and hospitals near you.</p>
+                <div class="bloodCardsContainer">
+                    <div class="bCards">
+                        <div class="bCardsHeader">
+                            <h1>AB-</h1>
+                            <p>Urgent</p>
+                        </div>
+                        <div class="bCardsMid">
+                            <img src="Image/SVG/location.svg" alt="location Icon">
+                            <p>Central Medical Hospital</p>
+                        </div>
+                        <div class="bCardsEnd">
+                            <img src="Image/SVG/Calendar.svg" alt="Calender Icon">
+                            <p>Expected by:Today, 8:00 PM</p>
+                        </div>
+                        <a href="">Contact Now</a>
+                    </div>
+                    <div class="bCards">
+                        <div class="bCardsHeader">
+                            <h1>O+</h1>
+                            <p>Needed</p>
+                        </div>
+                        <div class="bCardsMid">
+                            <img src="Image/SVG/location.svg" alt="location Icon">
+                            <p>Central General Health center</p>
+                        </div>
+                        <div class="bCardsEnd">
+                            <img src="Image/SVG/Calendar.svg" alt="Calender Icon">
+                            <p>Expected by:Tomm, 10:00 AM</p>
+                        </div>
+                        <a href="">Contact Now</a>
+                    </div>
+                        
+                    <div class="bCards">
+                        <div class="bCardsHeader">
+                            <h1>B+</h1>
+                            <p>Needed</p>
+                        </div>
+                        <div class="bCardsMid">
+                            <img src="Image/SVG/location.svg" alt="location Icon">
+                            <p>Regional Pediatric Wing</p>
+                        </div>
+                        <div class="bCardsEnd">
+                            <img src="Image/SVG/Calendar.svg" alt="Calender Icon">
+                            <p>Expected by:ASAP</p>
+                        </div>
+                        <a href="">Contact Now</a>
+                    </div>
+                </div>
+            </section>
+            <section id="howItWorks">
+                <h1>Simplifying the Donation Process</h1>
+                <p>Our platform bridges the gap between donors and receivers with clinical precision and empathetic design.</p>
+                <div id="cardsContainer">
+                    <div class="cards">
+                        <img src="Image/SVG/Register.svg" alt="Register Logo">
+                        <h2>Register</h2>
+                        <p>Quick biometric and medical forms to verify your donor profile in under 2 minutes.</p>
+                    </div>
+                    <div class="cards">
+                        <img src="Image/SVG/Connect.svg" alt="Connect Logo" >
+                        <h2>Connect</h2>
+                        <p>Real-time matching algorithms connect your blood type with the nearest hospital request.</p>
+                    </div>
+                    <div class="cards">
+                        <img src="Image/SVG/Heart.svg" alt="Heart Logo" >
+                        <h2>Save</h2>
+                        <p>Instant appointments and easy navigation to the donation center. Every drop counts.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="quote">
+                <div id="quoteContainer">
+                <p style="font-size: 2rem;text-align: justify;font-weight: 400;">"The platform is more than just tech; it's a lifeline. When our community member needed AB+ blood urgently, Clinical Vitality matched a donor from across the city in minutes. It's healthcare at its most human."</p>
+                <div style="display: flex; gap: 1rem;;">
+                    <img src="Image/SVG/Register.svg" alt="doctor image">
+                    <div>
+                        <p style="font-size: 1.75rem;font-weight: 600;">Dr. Sarah Rahman</p>
+                        <p>KUET Community Leader & Donor</p>
+                    </div>
+                </div>
+            </div>
+            </section>
 
-        </div>
-
+            <section id="saveLife">
+                <img src="Image/SVG/volunteer.svg" alt="hand logo">
+                <h1>Ready to save a Life Today?</h1>
+                <a href="">Start your Journey</a>
+            </section>
+            <footer>
+                <div id="footerLeft">
+                    <h1>BloodSync</h1>
+                    <p>© 2026 BloodSync. Life-saving precision in every drop. Empowering donors and clinics through modern health-tech solutions.</p>
+                </div>
+                <div id="footerRight">
+                    <h1>Emergency Hotline</h1>
+                    <p>1-800-LIFE-VITAL</p>
+                </div>
+            </footer>
+        </main>
     </section>
-
-    <section id="projects">
-
-        <h1>Featured Projects:</h1>
-
-        <div id="project_wrapper">
-
-        <div class="project_card">
-            <div class="project_image">
-
-            </div>
-            <div class="project_content">
-                <h3>Blood Donation System</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, cum vel consequatur, obcaecati similique iste quos voluptates vero fuga reprehenderit aliquid perspiciatis ab esse iusto eum rerum, porro animi veniam.
-                </p>
-                <a href="">View Project ></a>
-            </div>
-        </div>
-
-        <div class="project_card">
-            <div class="project_image">
-
-            </div>
-            <div class="project_content">
-                <h3>DIY Radar System</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente excepturi, placeat modi mollitia quam esse aliquid omnis quidem iusto maiores deserunt soluta eum, voluptatum possimus accusantium sint atque ut vel.
-                </p>
-                <a href="">View Project ></a>
-            </div>
-        </div>
-
-
-        </div>
-
-    </section>
-
-    <footer>
-        <div id="left_footer">
-            <p>GET IN TOUCH</p>
-            <p>Contact Form | <a href="">Email ></a></p>
-        </div>
-
-        <div class="social_media">
-            <div id="icons">
-            <a href="https://github.com/Kibonly" target="_blank" rel="noopener noreferrer">
-                <img src="img/SVG/github-142-svgrepo-com.svg" alt="" height="25px" width="25px">
-            </a>
-            <a href="https://www.facebook.com/sheikhsrabonahmed.shakib" target="_blank" rel="noopener noreferrer">
-               <img src="img/SVG/fb.svg" alt="" height="25px" width="25px">
-            </a>
-            <a href="" >
-                <img src="img/SVG/linkedin.svg" alt="" height="25px" width="25px">
-            </a>
-            <a href="https://www.instagram.com/sheikhsrabonahmed/" target="_blank" rel="noopener noreferrer">
-                <img src="img/SVG/insta.svg" alt="" height="30px" width="30px">
-    </a>
-    </div>
-
-    <p>Copyright 2025</p>
-
-    </div>
-
-    </footer>
-
 </body>
 </html>

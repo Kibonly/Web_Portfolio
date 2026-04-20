@@ -44,7 +44,6 @@ header{
     /* 3. The Glassy Effect (Glassmorphism) */
     background: rgba(245, 250, 255, 0.65); /* Semi-transparent version of your #f5faff body background */
     backdrop-filter: blur(12px); /* Blurs whatever scrolls underneath it */
-    -webkit-backdrop-filter: blur(12px); /* Support for Safari */
 }
 
 main{
