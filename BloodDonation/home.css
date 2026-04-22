@@ -22,7 +22,7 @@ li{
     list-style:none;
 }
 
-header{
+nav{
     font-family: plusJakarta;
     display: flex;
     justify-content: space-between;
@@ -65,7 +65,7 @@ header ul li:hover::after {
     transform: scaleX(1);
 }
 
-#siteBranding{
+#siteBranding a{
     color:#DC2626;
     font-weight: 800;
 }
@@ -245,7 +245,7 @@ main{
     max-width: 45rem;
     background-color: #E7E8E9;
     padding: 5rem;
-    border-radius: 10px;
+    border-radius: 30px;
     margin: 10rem 0;
 }
 #saveLife{

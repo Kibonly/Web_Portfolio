@@ -72,6 +72,11 @@ header a{
     padding: 0.5rem 0.8rem;
     border-radius: 10px;
     color: white;
+    transition: ease-in-out 0.2s;
+    display: inline-block;
+}
+#resume_button a:hover{
+    transform: scale(1.1);
 }
 
 #intro{
@@ -102,6 +107,11 @@ header a{
     padding: 1rem;
     border-radius: 10px;
     margin: 0 1rem 0 0;
+    display: inline-block;
+    transition: ease-in-out 0.2s;
+}
+#intro_buttons a:hover{
+    transform: scale(1.1);
 }
 
 .academicJourney {
@@ -140,6 +150,11 @@ header a{
     flex-direction: column;
     gap: 0.75rem;
     width: 20rem;
+    cursor: default;
+    transition: ease-in-out 0.2s;
+}
+.aj_cards:hover{
+    transform: scale(1.05);
 }
 
 .aj_cards p{
@@ -176,6 +191,12 @@ header a{
     border-radius: 10px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 4px 4px 0px;
     font-family: Inter;
+    cursor:default;
+    transition: ease-in-out .2s;
+}
+.ta_cards:hover{
+    transform: scale(1.05);
+    box-shadow: rgba(100, 100, 111, 0.2) 4px 4px 4px 4px;
 }
 
 #projects{
@@ -199,11 +220,13 @@ header a{
 }
 #carousel{
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     overflow-x: auto;
     scroll-behavior: smooth;
     anchor-name: --carousel;
     scroll-snap-type: x mandatory;
+    overflow-y: hidden;
+    padding: 3rem 2rem;
 }
 
 #carousel::-webkit-scrollbar{
@@ -247,7 +270,11 @@ header a{
     height: auto;
     width: 20rem;
     border-radius: 10px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 4px 4px 0px;
+    transition: ease-in-out 0.2s;
+}
+.project_cards:hover{
+    transform: scale(1.05);
+    box-shadow: rgba(100, 100, 111, 0.2) 4px 4px 4px 8px;
 }
 .project_cards h2{
     font-family: SpaceGrotesk;
@@ -277,6 +304,11 @@ header a{
     padding: 1rem;
     margin: 0 1rem 1.5rem 1rem;
     border-radius: 10px;
+    transition: ease-in-out 0.2s;
+}
+.project_cards a:hover{
+    background-color: #005DAC;
+    color: white;
 }
 
 
