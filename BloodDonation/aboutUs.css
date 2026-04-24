@@ -61,7 +61,8 @@ header ul li::after {
     transform-origin:center;
     transition: transform 0.25s ease-in-out;
 }
-header ul li:hover::after {
+header ul li:hover::after,
+header ul li.active::after {
     transform: scaleX(1);
 }
 
@@ -107,4 +108,90 @@ footer{
     padding: 1rem 2rem;
     border-radius: 10px;
     color: #D52F41;
+}
+
+#prologue{
+    background-color: #FFFFFF;
+    font-family: manrope;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 10rem 10rem 5rem 10rem;
+    max-width: 72rem;
+    text-align: justify;
+}
+#origin{
+    padding: 5rem 10rem;
+    display: flex;
+    gap: 1rem;
+    font-family: plusJakarta;
+    background-color: #F3F4F5;
+}
+#originLeft{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: justify;
+}
+#origin img{
+    width: 500px;
+    height: auto;
+    border-radius: 20px;
+    margin-left: 2.5rem;
+}
+#vision{
+    font-family: plusJakarta;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 10rem;
+}
+#cardsContainer{
+    display: flex;
+    gap: 2rem;
+    padding-top: 2rem;
+    flex-wrap: wrap;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #F3F4F5;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 400px;
+    flex-grow: 1;
+    text-align: justify;
+}
+.cards img{
+    width: 30px;
+    height: 30px;
+}
+#epilogue{
+    font-family: plusjakarta;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:  0 10rem 5rem 10rem;
+    gap: 3rem;
+}
+.epilogueContent{
+    display: flex;
+    text-align: justify;
+    gap: 1rem;
+}
+.epilogueContent img{
+    height: 24px;
+    width: 24px;
+}
+.epImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3F4F5;
+    padding: 0 1.5rem;
+    border-radius: 50%;
 }
