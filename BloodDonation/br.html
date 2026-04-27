@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="br.css">
+    <title>Emergency Blood Request</title>
+</head>
+<body>
+    <section id="container">
+        <header>
+            <nav>
+            <div id="siteBranding">
+                <a href="#" target="_self">BloodSync</a>
+            </div>
+            <ul>
+                <li><a href="">Find Blood</a></li>
+                <li><a href="">Become a Donor</a></li>
+                <li><a href="">How it Works</a></li>
+                <li><a href="aboutUs.html">About us</a></li>
+            </ul>
+            <div id="loginButton">
+                <a href="">Login/Register</a>
+            </div>
+            </nav>
+        </header>
+
+        <main>
+            <p>EMERGENCY BROADCAST</p>
+            <h1>Create Urgent Blood Request</h1>
+            <p>This request will be broadcasted to all matching donors within a 50km radius immediately. Ensure all clinical details are accurate.</p>
+            <form action="">
+                <div class="formDiv">
+                    <div id="bloodRequirements">
+                        <div>
+                            <img src="" alt="blood logo">
+                            <h3>Blood Requirements</h3>
+                        </div>
+                        <p>Select Required Blood Type</p>
+                        <div id="bloodTypeContainer">
+                            <input type="radio" name="bloodType" id="a_pos" value="A+">
+                            <label for="a_pos">A+</label>
+
+                            <input type="radio" name="bloodType" id="a_neg" value="A-">
+                            <label for="a_neg">A-</label>
+
+                            <input type="radio" name="bloodType" id="b_pos" value="B+">
+                            <label for="b_pos">B+</label>
+
+                            <input type="radio" name="bloodType" id="b_neg" value="B-">
+                            <label for="b_neg">B-</label>
+
+                            <input type="radio" name="bloodType" id="o_pos" value="O+">
+                            <label for="o_pos">O+</label>
+
+                            <input type="radio" name="bloodType" id="o_neg" value="O-">
+                            <label for="o_neg">O-</label>
+
+                            <input type="radio" name="bloodType" id="ab_pos" value="AB+">
+                            <label for="ab_pos">AB+</label>
+
+                            <input type="radio" name="bloodType" id="ab_neg" value="AB-">
+                            <label for="ab_neg">AB-</label>
+                        </div>
+
+                        <label for="unitsR">Units Required</label>
+                        <input type="number" name="unitsRequired" id="unitsR">
+                    </div>
+                    <div id="patientStatus">
+                        <div>
+                            <img src="" alt="patient logo">
+                            <h3>Patient Status</h3>
+                        </div>
+                        <div>
+                            <label for="patientName">Patient Name (Optional)</label>
+                            <input type="text" name="patientName" id="patientName">
+                        </div>
+                        <div>
+                            <p>Critical Urgency</p>
+                            <div>
+                                <input type="radio" name="CriticalUrgency" id="urgent" value="Urgent">
+                                <label for="urgent">Urgent</label>
+
+                                <input type="radio" name="CriticalUrgency" id="critical" value="Critical">
+                                <label for="critical">Critical</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="formDiv">
+                    <div id="locationDetails">
+                        <div>
+                            <img src="" alt="Location logo">
+                            <h3>Location Details</h3>
+                        </div>
+                        <div>
+                            <label for="wardName">Ward (Optional)</label>
+                            <input type="text" name="ward" id="wardName" placeholder="e.g. ICU-A">
+
+                            <label for="bedNo">Bed No. (Optional)</label>
+                            <input type="text" name="bedNo" id="bedNo" placeholder="e.g. 14">
+                        </div>
+
+                    </div>
+                    <div id="contact">
+                        <div>
+                            <img src="" alt="Contact Logo">
+                            <h3>Contact Person</h3>
+                        </div>
+                        <div class="cPerson">
+                            <img src="" alt="Phone Logo">
+
+                                <label for="pMobile">Primary Mobile</label>
+                                <input type="number" name="mobileNumber" id="pMobile">
+                        </div>
+                        <div class="cPerson">
+                            <img src="" alt="Contact add Icon">
+
+                            <label for="sContact">Secondary Contact (Optional)</label>
+                            <input type="number" name="Mobile Number" id="sContact" placeholder="Alternative Number">
+                        </div>
+                    </div>
+                </div>
+                <button type="submit">Broadcast Emergency Request</button>
+            </form>
+        </main>
+
+        <footer>
+                <div id="footerLeft">
+                    <h1>BloodSync</h1>
+                    <p>© 2026 BloodSync. Life-saving precision in every drop. Empowering donors and clinics through modern health-tech solutions.</p>
+                </div>
+                <div id="footerRight">
+                    <h1>Emergency Hotline</h1>
+                    <p>1-800-LIFE-VITAL</p>
+                </div>
+            </footer>
+
+    </section>
+</body>
+</html>
