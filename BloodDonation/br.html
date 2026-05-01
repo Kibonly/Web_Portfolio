@@ -11,7 +11,7 @@
         <header>
             <nav>
             <div id="siteBranding">
-                <a href="#" target="_self">BloodSync</a>
+                <a href="./home.html" target="_self">BloodSync</a>
             </div>
             <ul>
                 <li><a href="">Find Blood</a></li>
@@ -26,102 +26,113 @@
         </header>
 
         <main>
-            <p>EMERGENCY BROADCAST</p>
-            <h1>Create Urgent Blood Request</h1>
-            <p>This request will be broadcasted to all matching donors within a 50km radius immediately. Ensure all clinical details are accurate.</p>
+            <p style="font-size: 0.875rem;font-weight: 600;">EMERGENCY BROADCAST</p>
+            <h1 style="font-size: 2.5rem;font-weight: 800;">Create Urgent Blood Request</h1>
+            <p style="max-width: 35rem;text-align: justify;margin-bottom: 1rem;">This request will be broadcasted to all matching donors within a 50km radius immediately. Ensure all clinical details are accurate.</p>
             <form action="">
                 <div class="formDiv">
-                    <div id="bloodRequirements">
-                        <div>
-                            <img src="" alt="blood logo">
+                    <div id="bloodRequirements" class="bContainer">
+                        <div class="imageText">
+                            <img src="Image/SVG/BloodIcon.svg" alt="blood logo">
                             <h3>Blood Requirements</h3>
                         </div>
                         <p>Select Required Blood Type</p>
-                        <div id="bloodTypeContainer">
+                        <div id="bloodTypeContainer" class="radioClass">
                             <input type="radio" name="bloodType" id="a_pos" value="A+">
-                            <label for="a_pos">A+</label>
+                            <label for="a_pos" class="circle">A+</label>
 
                             <input type="radio" name="bloodType" id="a_neg" value="A-">
-                            <label for="a_neg">A-</label>
+                            <label for="a_neg" class="circle">A-</label>
 
                             <input type="radio" name="bloodType" id="b_pos" value="B+">
-                            <label for="b_pos">B+</label>
+                            <label for="b_pos" class="circle">B+</label>
 
                             <input type="radio" name="bloodType" id="b_neg" value="B-">
-                            <label for="b_neg">B-</label>
+                            <label for="b_neg" class="circle">B-</label>
 
                             <input type="radio" name="bloodType" id="o_pos" value="O+">
-                            <label for="o_pos">O+</label>
+                            <label for="o_pos" class="circle">O+</label>
 
                             <input type="radio" name="bloodType" id="o_neg" value="O-">
-                            <label for="o_neg">O-</label>
+                            <label for="o_neg" class="circle">O-</label>
 
                             <input type="radio" name="bloodType" id="ab_pos" value="AB+">
-                            <label for="ab_pos">AB+</label>
+                            <label for="ab_pos" class="circle">AB+</label>
 
                             <input type="radio" name="bloodType" id="ab_neg" value="AB-">
-                            <label for="ab_neg">AB-</label>
+                            <label for="ab_neg" class="circle">AB-</label>
                         </div>
 
                         <label for="unitsR">Units Required</label>
                         <input type="number" name="unitsRequired" id="unitsR">
                     </div>
-                    <div id="patientStatus">
-                        <div>
-                            <img src="" alt="patient logo">
+                    <div id="patientStatus" class="bContainer">
+                        <div class="imageText">
+                            <img src="Image/SVG/Patient List.svg" alt="patient logo">
                             <h3>Patient Status</h3>
                         </div>
-                        <div>
+                        <div class="tContainer">
                             <label for="patientName">Patient Name (Optional)</label>
                             <input type="text" name="patientName" id="patientName">
                         </div>
-                        <div>
-                            <p>Critical Urgency</p>
-                            <div>
+                        <div style="display: flex;flex-direction: column;gap: 1rem;">
+                            <p>Clinical Urgency</p>
+                            <div class="radioClass">
                                 <input type="radio" name="CriticalUrgency" id="urgent" value="Urgent">
-                                <label for="urgent">Urgent</label>
+                                <label for="urgent" class="rectangle">Urgent</label>
 
                                 <input type="radio" name="CriticalUrgency" id="critical" value="Critical">
-                                <label for="critical">Critical</label>
+                                <label for="critical" class="rectangle">Critical</label>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="formDiv">
-                    <div id="locationDetails">
-                        <div>
-                            <img src="" alt="Location logo">
+                    <div id="locationDetails" class="bContainer" >
+                        <div class="imageText">
+                            <img src="Image/SVG/location_details.svg" alt="Location logo">
                             <h3>Location Details</h3>
                         </div>
-                        <div>
-                            <label for="wardName">Ward (Optional)</label>
+                        <div class="tContainer">
+                            <label for="wardName">Receiving Hospital</label>
                             <input type="text" name="ward" id="wardName" placeholder="e.g. ICU-A">
-
-                            <label for="bedNo">Bed No. (Optional)</label>
-                            <input type="text" name="bedNo" id="bedNo" placeholder="e.g. 14">
+                        </div>
+                        <div style="display: flex;gap: 1rem;">
+                            <div class="tContainer">
+                                <label for="wardName">Ward (Optional)</label>
+                                <input type="text" name="ward" id="wardName" placeholder="e.g. ICU-A">
+                            </div>
+                            <div class="tContainer">
+                                <label for="bedNo">Bed No. (Optional)</label>
+                                <input type="text" name="bedNo" id="bedNo" placeholder="e.g. 14">
+                            </div>
                         </div>
 
                     </div>
-                    <div id="contact">
-                        <div>
-                            <img src="" alt="Contact Logo">
+                    <div id="contact" class="bContainer">
+                        <div class="imageText">
+                            <img src="Image/SVG/contact_phone.svg" alt="Contact Logo">
                             <h3>Contact Person</h3>
                         </div>
                         <div class="cPerson">
-                            <img src="" alt="Phone Logo">
-
+                            <img src="Image/SVG/Phone.svg" alt="Phone Logo">
+                            <div class="t2Container">
                                 <label for="pMobile">Primary Mobile</label>
                                 <input type="number" name="mobileNumber" id="pMobile">
+                            </div>
                         </div>
                         <div class="cPerson">
-                            <img src="" alt="Contact add Icon">
-
-                            <label for="sContact">Secondary Contact (Optional)</label>
-                            <input type="number" name="Mobile Number" id="sContact" placeholder="Alternative Number">
+                            <img src="Image/SVG/secondary_contact.svg" alt="Contact add Icon">
+                            <div class="t2Container">
+                                <label for="sContact">Secondary Contact (Optional)</label>
+                                <input type="number" name="Mobile Number" id="sContact" placeholder="Alternative Number">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <button type="submit">Broadcast Emergency Request</button>
+                <div >
+                    <button type="submit">Broadcast Emergency Request</button>
+                </div>
             </form>
         </main>
 

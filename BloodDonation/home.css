@@ -12,6 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 a{
@@ -299,4 +300,7 @@ footer{
     padding: 1rem 2rem;
     border-radius: 10px;
     color: #D52F41;
+}
+.sectionLinks{
+    scroll-margin-top: 4rem;
 }

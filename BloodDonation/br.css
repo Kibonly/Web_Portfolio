@@ -107,3 +107,165 @@ footer{
     border-radius: 10px;
     color: #D52F41;
 }
+main{
+    padding: 10rem 14rem 10rem 15rem;
+    font-family: plusJakarta;
+    background-color: #eef1f7eb;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.formDiv{
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+.imageText{
+    display: flex;
+    gap: .5rem;
+}
+.imageText h3{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.bContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    padding: 3rem;
+    border-radius: 2rem;
+    gap: 1rem;
+    transition: all .1s ease-in-out;
+    border-left: solid 5px transparent;
+}
+.bContainer:hover{
+    border-left: solid 5px #BD1B32;
+}
+.radioClass input[type="radio"],#bloodTypeContainer input[type="radio"]{
+    display: none;
+}
+.radioClass{
+    display: flex;
+    gap: 1rem;
+}
+.circle{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cfd8e2cc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.radioClass input[type="radio"]:checked + .circle{
+    background-color: #DC2626;
+}
+#bloodRequirements input{
+    display: flex;
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: #d9e3ee5a;
+    border-style: none;
+}
+#unitsR{
+    text-align: center;
+    font-weight: 600;
+}
+#unitsR:focus{
+    background-color: #FFF;
+    outline-color: #D52F41;
+}
+#patientStatus{
+    min-width: 20rem;
+}
+.tContainer{
+    background-color: #e2e8f0;
+    border-radius: 20px;
+    padding: 1rem;
+    font-size: .875rem;
+    display: flex;
+    flex-direction: column;
+    gap: .875rem;
+}
+.tContainer input,.t2Container input{
+    outline: none;
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+}
+.tContainer:focus-within{
+    background-color: #FFF;
+    border: 1px solid #0070EA;
+}
+.rectangle{
+    border-radius: 10px;
+    background-color: #cfd8e2cc;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: .75rem 2rem;
+}
+.radioClass input[type="radio"]:checked + .rectangle{
+    background-color: #0070EA;
+    color: #fff;
+}
+.cPerson{
+    display: flex;
+    background-color: #e2e8f0;
+    border-radius: 20px;
+    padding: 0 1rem;
+}
+.cPerson img{
+    height: 24px;
+    width: 24px;
+    display: flex;
+    align-items: center;
+    height: auto;
+}
+.t2Container{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+}
+.cPerson:focus-within{
+    background-color: #FFF;
+    border: 1px solid #0070EA;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#contact{
+    min-width: 30rem;
+}
+button{
+    padding: 1.5rem;
+    background-color:#BD1B32;
+    color: #FFF;
+    font-weight: 800;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 1rem;
+    font-family: plusJakarta;
+    width: 100%;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+button:hover{
+    transform: scale(1.01);
+}
+#patientStatus:hover,#contact:hover,#locationDetails:hover{
+    border-left: solid 5px #0070EA;
+}
