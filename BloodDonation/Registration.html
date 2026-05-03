@@ -3,28 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="br.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="Registration.css">
+    <title>Become a Donor</title>
 </head>
 <body>
     <section id="container">
         <header>
             <nav>
             <div id="siteBranding">
-                <a href="#" target="_self">BloodSync</a>
+                <a href="home.html" target="_self">BloodSync</a>
             </div>
             <ul>
                 <li><a href="">Find Blood</a></li>
-                <li><a href="">Become a Donor</a></li>
-                <li><a href="">How it Works</a></li>
+                <li><a href="#">Become a Donor</a></li>
+                <li><a href="home.html#howItWorks">How it Works</a></li>
                 <li><a href="aboutUs.html">About us</a></li>
             </ul>
             <div id="loginButton">
-                <a href="">Login/Register</a>
+                <a href="#">Login/Register</a>
             </div>
             </nav>
         </header>
 
+        <main>
+            <section id="registration">
+                <form action="">
+                    <div id="personalDetails">
+                            <div class="tContainer">
+                            <img src="Image/SVG/person.svg" alt="Person logo" class="svg">
+                            <h3>Personal Information</h3>
+                        </div>
+                        <div class="bContainer">
+                            <div class="bContent">
+                                <label for="fName">Full Name</label>
+                                <input type="text" name="" id="fName" placeholder="Srabon Ahmed">
+                            </div>
+                            <div class="bContent">
+                                <label for="birthDate">DATE OF BIRTH</label>
+                                <input type="date">
+                            </div>
+                        </div>
+                        <div id="genderi">
+                            <p style="font-size: .875rem;font-weight: 200;">GENDER IDENTITY</p>
+                            <div class="rContainer">
+                                
+                                <div class="radial">
+                                    <label for="genderMale">Male</label>
+                                    <input type="radio" name="genderGROUP" id="genderMale" value="male">
+                                </div>
+                                <div class="radial">
+                                    <label for="genderFemale">Female</label>
+                                    <input type="radio" name="genderGROUP" id="genderFemale" value="female">
+                                </div>
+                                <div class="radial">
+                                    <label for="genderOther">Other</label>
+                                    <input type="radio" name="genderGROUP" id="genderOther" value="other">
+                                </div>
+                            </div>
+                        </div >
+                    </div>
+                    <div id="contactDetails">
+                        <div class="tContainer">
+                            <img src="Image/SVG/contactDetails.svg" alt="Contact icon" class="svg">
+                            <h3>Contact Details</h3>
+                        </div>
+                        <div class="bContainer">
+                            <div class="bContent">
+                                <label for="email">EMAIL ADDRESS</label>
+                                <input type="text" for="email" placeholder="srabon@gmail.com">
+                            </div>
+                            <div class="bContent">
+                                <label for="phone">PHONE NUMBER</label>
+                                <input type="number" for="phone" placeholder="+8801980943609">
+                            </div>
+                        </div>
+                        <div style="font-size: .875rem;font-weight: 200;">
+                            <label for="address">CITY/RESIDENTIAL ADDRESS</label>
+                            <input type="text" id="address">
+                        </div>
+                    </div>
+                    <div id="medicalHistory">
+                        <div class="tContainer">
+                            <img src="Image/SVG/medicalicon.svg" alt="Medical Logo" class="svg" id="redSvg">
+                            <h3>Medical History</h3>
+                        </div>
+                        <div class="bContainer">
+                            <div class="select">
+                                <label for="bType">BLOOD TYPE</label>
+                                <select name="bloodType" id="bType">
+                                    <option value="A+">A+</option>
+                                    <option value="A-">A-</option>
+                                    <option value="B+">B+</option>
+                                    <option value="B-">B-</option>
+                                    <option value="AB+">AB+</option>
+                                    <option value="AB-">AB-</option>
+                                    <option value="O+">O+</option>
+                                    <option value="O-">O-</option>
+                                </select>
+                            </div>
+                            <div class="bContent">
+                                <label for="lastDonated">LAST DONATION DATE</label>
+                                <input type="date" id="lastDonated">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="accountSetup">
+                        <div class="tContainer">
+                            <img src="Image/SVG/lock.svg" alt="Lock icon" class="svg">
+                            <h3>Account Setup</h3>
+                        </div>
+                        <div class="bContainer">
+                            <div class="bContent">
+                                <label for="uNAme">USERNAME</label>
+                                <input type="text" id="uName" placeholder="kiBonLy">
+                            </div>
+                            <div class="bContent">
+                                <label for="pass">PASSWORD</label>
+                                <input type="password" id="pass">
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit">Complete Registration &#x2192</button>
+                </form>
+            </section>
+        </main>
         <footer>
                 <div id="footerLeft">
                     <h1>BloodSync</h1>

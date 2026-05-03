@@ -3,15 +3,11 @@
     src: url(../Fonts/PlusJakartaSans-VariableFont_wght.ttf);
 }
 
-@font-face {
-    font-family: 'manrope';
-    src: url(../Fonts/Manrope-VariableFont_wght.ttf);
-}
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: plusJakarta;
 }
 
 a{
@@ -106,4 +102,121 @@ footer{
     padding: 1rem 2rem;
     border-radius: 10px;
     color: #D52F41;
+}
+
+#registration{
+    display: flex;
+    background-color: #ebecee;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    background-color: #fff;
+    padding: 5rem;
+    margin: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-radius: 1rem;
+}
+.tContainer{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+.tContainer h3{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.svg{
+    background-color: #c1cef4;
+    border-radius: 50%;
+    padding: .75rem;
+}
+
+input{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: .5rem 0;
+    background-color: #cfd8e2cc;
+    border: none;
+}
+input:focus-within{
+    background-color: #fff;
+    outline-color: #c1cef4;
+}
+#personalDetails,#contactDetails,#medicalHistory,#accountSetup,#genderi{
+    display: flex;
+    flex-direction: column;
+    gap: .875rem;
+}
+.bContainer{
+    display: flex;
+    gap: 1rem;
+}
+.bContainer label{
+    font-size: .75rem;
+    font-weight: 200;
+}
+.bContent{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.rContainer{
+    display: flex;
+    gap: 1rem;
+}
+input[type="radio"]{
+    display: none;
+}
+.radial{
+    background-color: #cfd8e2cc;
+    border-radius: 1rem;
+    width: 10rem;
+    text-align: center;
+    display: flex;
+}
+.radial label{
+    width: 100%;
+    padding: 1rem;
+    cursor: pointer;
+}
+.radial:has(input[type="radio"]:checked) {
+    background-color: #0059BB;
+    color: #fff;
+    font-weight: 800;
+}
+.select{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+select option{
+    display: flex;
+    text-align: center;
+    background-color: #fff;
+}
+
+select{
+    background-color: #cfd8e2cc;
+    padding: .95rem;
+    border: none;
+    border-radius: 1rem;
+}
+button{
+    border: none;
+    padding: 1rem;
+    background-color: #BE1B32;
+    color: #fff;
+    font-size: 1.15rem;
+    font-weight: 800;
+    border-radius: 5rem;
+    transition: all .15s ease-in-out;
+}
+button:hover{
+    transform: scale(1.01);
+    cursor: pointer;
 }
