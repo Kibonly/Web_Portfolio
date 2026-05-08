@@ -1,54 +1,120 @@
-*{
-    margin:0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+@font-face {
+    font-family: 'plusJakarta';
+    src: url(../Fonts/PlusJakartaSans-VariableFont_wght.ttf);
 }
 
-body{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: plusJakarta;
+}
+a{
+    text-decoration: none;
+}
+.divider {
+  display: flex;
+  align-items: center; /* Vertically centers the lines with the text */
+  text-align: center;
+  color: #7a8b9a; /* Matches the grayish-blue text color */
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 20px 0; /* Adds spacing above and below */
+}
+
+/* This creates the lines */
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1; /* Tells the lines to stretch and take up remaining space */
+  border-bottom: 1px solid #dcdcdc; /* The color and thickness of the line */
+}
+
+/* Adds spacing between the lines and the text */
+.divider::before {
+  margin-right: 15px;
+}
+
+.divider::after {
+  margin-left: 15px;
+}
+
+#divider2::before {
+  margin-right: 0px;
+}
+
+#divider2::after {
+  margin-left: 0px;
+}
+
+.formContainer{
+    background-color: #eef1f7eb;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: f4f7f6;
+    padding: 5rem;
 }
 
 form{
+    background-color: #fff;
+    padding: 5rem;
+    border-radius: 2rem;
     display: flex;
     flex-direction: column;
-    background-color: #fff;
-    padding: 30px 35px;
-    margin: 10px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
-    width: 250px;
-    height: auto;
-    border-radius: 10px;
+    gap: 2rem;
+    width: 35rem;
 }
-
-h2{
-    padding: 10px;
-    margin-bottom: 10px;
-    text-align: center;
+.tContainer{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
 }
 
 input{
-    padding: 10px 10px;
-    margin-bottom: 10px;
-    outline: none;
+    display: flex;
+    width: 100%;
+    padding: .75rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #cfd8e2cc;
+    padding-left: 1rem;
 }
-
+input:focus-within{
+    background-color: #fff;
+    outline-color: #c1cef4;
+}
 label{
-    margin-bottom: 5px;
+    font-weight: 300;
 }
 
 button{
+    padding: 1rem;
+    border-radius: 1rem;
     border: none;
-    padding: 10px;
-    margin: 10px 0 10px;
-    font-weight: bold;
-    background-color: #0056b3;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: large;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: #BE1B32;
     color: #fff;
-    
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+#signup{
+    background-color: #0070EA;
+    color: #fff;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    transition: all .1s ease-in-out;
+}
+
+button:hover,#signup:hover{
+    transform: scale(1.02);
+}
+#header{
+    display: flex;
+    flex-direction: column;
 }
