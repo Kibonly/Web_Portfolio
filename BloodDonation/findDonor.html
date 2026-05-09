@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="findDonor.css">
+    <title>Find Donors</title>
+</head>
+<body>
+    <section id="container">
+        <header>
+            <nav>
+            <div id="siteBranding">
+                <a href="home.html">BloodSync</a>
+            </div>
+            <ul>
+                <li><a href="findDonor.html">Find Blood</a></li>
+                <li><a href="Registration.html">Become a Donor</a></li>
+                <li><a href="home.html#howItWorks">How it Works</a></li>
+                <li><a href="aboutUs.html">About us</a></li>
+            </ul>
+            <div id="loginButton">
+                <a href="login.html">Login/Register</a>
+            </div>
+            </nav>
+        </header>
+
+        <main>
+            <section style="display: flex;flex-direction: column;gap: .5rem;">
+                <h1 style="font-size: 3rem;font-weight: 800;">Heroes nearby,<span style="color: #B80035;"><br>ready to help.</span></h1>
+                <p style="font-weight: 200;max-width: 38rem;font-size: 1.25rem;">Connecting you with compassionate individuals in your area. Every connection is a potential lifesaver.</p>
+            </section>
+
+            <search>
+                <form action="">
+                    <div class="lContainer">
+                        <label for="bType">Blood Type</label>
+                        <select name="bloodType" id="bType">
+                            <option value="a+">A+</option>
+                            <option value="a-">A-</option>
+                            <option value="b+">B+</option>
+                            <option value="b-">B-</option>
+                            <option value="o+">O+</option>
+                            <option value="o-">O-</option>
+                            <option value="ab+">AB+</option>
+                            <option value="ab-">AB-</option>
+                        </select>
+                    </div>
+
+                    <div class="lContainer">
+                        <label for="location">Location</label>
+                        <div class="imageTextContainer">
+                            <img src="Image/SVG/location.svg" alt="location logo">
+                            <input type="text" name="location" id="location">
+                        </div>
+                    </div>
+
+                    <button type="submit">
+                        <img src="Image/SVG/search Icon.svg" alt="Search Icon">
+                        <p>Find Now</p>
+                    </button>
+                </form>
+            </search>
+
+            <section id="result">
+                <div class="cardContainer">
+                    <div class="cardHeaderContainer">
+                        <div class="cardHeader">
+                            <img src="Image/SVG/girl.svg" alt="PP">
+                            <div class="text">
+                                <h3>Sarah j.</h3>
+                                <div class="tContainer">
+                                <img src="Image/SVG/location.svg" alt="location Logo">
+                                <p>1.2 miles away</p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="circle">
+                            <p>O+</p>
+                        </div>
+                    </div>
+        
+                    <div class="cardContent">
+                        <div class="tContainer">
+                            <img src="Image/SVG/check.svg" alt="Availability logo" class="circle2">
+                            <p>Ready to help today</p>
+                        </div>
+                        <div class="tContainer">
+                            <img src="Image/SVG/verified2.svg" alt="Verified status" class="circle3">
+                            <p>Verified Donor</p>
+                        </div>
+                    </div>
+                    <a href="">Connect With Sarah</a>
+                </div>
+
+                <div class="cardContainer">
+                    <div class="cardHeaderContainer">
+                            <div class="cardHeader">
+                                <img src="Image/SVG/boy.svg" alt="PP">
+                                <div class="text">
+                                    <h3>Michael T.</h3>
+                                    <div class="tContainer">
+                                    <img src="Image/SVG/location.svg" alt="location Logo">
+                                    <p>2.5 miles away</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="circle">
+                                <p>A-</p>
+                            </div>
+                    </div>
+                    <div class="cardContent">
+                        <div class="tContainer">
+                            <img src="Image/SVG/Not available.svg" alt="Availability logo" class="circle2">
+                            <p>Available in 2 days</p>
+                        </div>
+                        <div class="tContainer">
+                            <img src="Image/SVG/verified2.svg" alt="Verified status" class="circle3">
+                            <p>Verified Donor</p>
+                        </div>
+                    </div>
+                    <a href="">Connect With Michael</a>
+                </div>
+
+                <div class="cardContainer">
+                    <div class="cardHeaderContainer">
+                            <div class="cardHeader">
+                                <img src="Image/SVG/boy.svg" alt="PP">
+                                <div class="text">
+                                    <h3>Srabon Ah.</h3>
+                                    <div class="tContainer">
+                                    <img src="Image/SVG/location.svg" alt="location Logo">
+                                    <p>2.5 miles away</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="circle">
+                                <p>A-</p>
+                            </div>
+                    </div>
+                    <div class="cardContent">
+                        <div class="tContainer">
+                            <img src="Image/SVG/check.svg" alt="Availability logo" class="circle2">
+                            <p>Ready to help today</p>
+                        </div>
+                        <div class="tContainer">
+                            <img src="Image/SVG/verified2.svg" alt="Verified status" class="circle3">
+                            <p>Verified Donor</p>
+                        </div>
+                    </div>
+                    <a href="">Connect With Srabon</a>
+                </div>
+
+                <div class="cardContainer"></div>
+                <div class="cardContainer"></div>
+                <div class="cardContainer"></div>
+                <div class="cardContainer"></div>
+                <div class="cardContainer"></div>
+                <div class="cardContainer"></div>
+            </section>
+        </main>
+
+        <footer>
+            <div id="footerLeft">
+                <h1>BloodSync</h1>
+                <p>© 2026 BloodSync. Life-saving precision in every drop. Empowering donors and clinics through modern health-tech solutions.</p>
+            </div>
+            <div id="footerRight">
+                <h1>Emergency Hotline</h1>
+                <p>1-800-LIFE-VITAL</p>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>
