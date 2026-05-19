@@ -1,0 +1,191 @@
+@font-face {
+    font-family: 'plusJakarta';
+    src: url(../Fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    background-color: #F5F6FD;
+    padding: 5rem 10rem;
+    display: flex;
+    flex-direction: column;
+    font-family: plusJakarta;
+    gap: 1rem;
+    height: max-content;
+}
+h1{
+    font-size: 3rem;
+    font-weight: 800;
+}
+#divider{
+    display: flex;
+    justify-content: space-between;
+}
+
+#divider p{
+    max-width: 35rem;
+    font-weight: 300;
+}
+#cardsContainer{
+    display: flex;
+    justify-content: space-between;
+}
+li{
+    list-style: none;
+    font-weight: 800;
+}
+#card1{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 2rem;
+    padding: 3rem 2rem;
+    width: 50rem;
+    transition: all ease-in-out .1s;
+}
+#card1 ul{
+    background-color:#DFECEA;
+    width: 8.9rem;
+    padding: .5rem 1rem;
+    border-radius: .875rem;
+}
+#card1 p{
+    max-width: 35rem;
+    font-weight: 300;
+}
+#card2{
+    background-color: #E11D48;
+    border-radius: 2rem;
+    padding: 2rem;
+    text-align: center;
+    color: #fff;
+    transition: all ease-in-out .1s;
+}
+.availability-container {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 12px 14px 12px 24px; 
+  border-radius: 40px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  gap: 16px; 
+}
+
+.label-text {
+  color: #313b5a; 
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 28px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #d1d5db; 
+  transition: .4s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #b20032; 
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px);
+}
+#donorContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 5rem;
+}
+.cardsContainer{
+  display: flex;
+  gap: 2rem;
+}
+.cards{
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  flex-grow: 1;
+  transition: all ease-in-out .1s;
+}
+.cards img{
+  height: 24px;
+  width: 24px;
+}
+#firstCard{
+  display: flex;
+  background-color: #ffffff;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  transition: all ease-in-out .1s;
+}
+.text{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  width: 30rem;
+  align-self: center;
+}
+.imgText{
+  display: flex;
+}
+#rectangle{
+  background-color: #E3F7F4;
+  width: max-content;
+  padding: .5rem 1rem;
+  border-radius: 1rem;
+}
+.circle{
+  background-color: #F8E7EA;
+  display: flex;
+  flex-direction: column;
+  color: #b20032;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 50%;
+  align-items: center;
+  border: 1px #b20032 solid;
+}
+.cards:hover,#firstCard:hover,#card1:hover,#card2:hover{
+  transform: scale(1.05);
+}

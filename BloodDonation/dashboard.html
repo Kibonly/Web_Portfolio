@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=#, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <main>
+        <h1>Good Morning,<span id="name">Sarah!!!</span></h1>
+        <div id="divider">
+            <p>Your generosity continues to make a vital difference. Here is your impact overview.</p>
+            <div id="availability-container">
+                <span class="label-text">Availability</span>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+
+        <div id="cardsContainer">
+            <div id="card1">
+                <ul>
+                    <li>Ready to Help</li>
+                </ul>
+                <h2>You are eligible to donate.</h2>
+                <p>Your last donation was <span id="day">60</span> days ago. Local clinics currently have a high demand for <span id="bType">0+</span> blood.</p>
+            </div>
+            <div id="card2">
+                <img src="Image/SVG/heart-fill-svgrepo-com.svg" alt="Heart logo">
+                <p style="font-size: 3rem;font-weight: 800;" >12</p>
+                <p style="font-size: 1.5rem;font-weight: 700;">lives impacted</p>
+                <p style="font-size: .875rem;font-weight: 200;">Every drop counts. You're a hero to many.</p>
+            </div>
+        </div>
+
+        <div id="donorContainer">
+            <h2>Donor Profile</h2>
+            <div class="cardsContainer">
+                <div  id="firstCard">
+                    <img src="Image/SVG/account_dashboard.svg" alt="pp logo">
+                    <div class="text">
+                        <p>FULL NAME</p>
+                        <h2 id="fname">Sarah Jenkins</h2>
+                        <div class="imgText" id="rectangle">
+                            <img src="Image/SVG/verified_dashboard.svg" alt="verified logo">
+                            <p>Identity Verified</p>
+                        </div>
+                    </div>
+                    <div class="circle">
+                        <h3 id="bloodType">O+</h3>
+                        <p>Blood Type</p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="imgText">
+                        <img src="Image/SVG/calendar_dashboard.svg" alt="Calendar icon">
+                        <p>LAST DONATION</p>
+                    </div>
+                    <h2 id="lastDonated">OCT 12, 2025</h2>
+                    <p>KUET Medical Center</p>
+                </div>
+            </div>
+
+            <div class="cardsContainer">
+                <div class="cards">
+                    <div class="imgText">
+                        <img src="Image/SVG/phone_dashboard.svg" alt="phone icon">
+                        <p>PHONE NUMBER</p>
+                    </div>
+                    <h2 id="phone">0198094309</h2>
+                    <div class="imgText">
+                        <img src="Image/SVG/sms_dashboard.svg" alt="SMS Icon">
+                        <p>SMS Alerts Active</p>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class="imgText">
+                        <img src="Image/SVG/address_dashboard.svg" alt="Address Icon">
+                        <p>ADDRESS</p>
+                    </div>
+                    <h2 id="address">Boyra,Khulna</h2>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
